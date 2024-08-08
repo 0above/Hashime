@@ -1,6 +1,9 @@
 package hashes
 
-// IsSHA1 checks if the hash is a SHA-1 hash.
+// Define the length of a SHA-1 hash in hexadecimal form
+const sha1Length = 40
+
+// IsSHA1 checks if the hash is a valid SHA-1 hash
 func IsSHA1(hash string) bool {
-    return len(hash) == 40
+    return len(hash) == sha1Length && IsHex(hash)
 }
