@@ -7,7 +7,7 @@ Hashime is a Go library designed for efficient hash detection and verification. 
 
 **Note: Hashime is currently in an early development stage (undersaturation). The library is not yet feature-complete, and changes are expected.**
 
-![Hashime Logo](addlink) <!-- Optional: Add a logo or image -->
+![Hashime Logo](addlink)
 
 ## Features
 
@@ -40,14 +40,11 @@ import (
 func main() {
     data := []byte("example data")
 
-    // Create a new hash detector
     detector := hashime.New()
 
-    // Calculate SHA-256 hash
     sha256Hash := detector.CalculateSHA256(data)
     fmt.Printf("SHA-256: %x\n", sha256Hash)
 
-    // Calculate MD5 hash
     md5Hash := detector.CalculateMD5(data)
     fmt.Printf("MD5: %x\n", md5Hash)
 }
@@ -71,4 +68,4 @@ Hashime is released under the MIT License. See [LICENSE](LICENSE) for more detai
 
 ## Contact
 
-For questions or feedback, please open an issue on the [GitHub repository](https://github.com/0above/Hashime) or contact [your-email@example.com](mailto:your-email@example.com).
+For questions or feedback, please open an issue on the [GitHub repository](https://github.com/0above/Hashime) or contact [email@example.com](mailto:email@example.com).
