@@ -1,6 +1,4 @@
-# Hashime
-
-## - A Go Library for Hash Detection
+# Hashime - A Go Library for Hash Detection
 
 ## Overview
 
