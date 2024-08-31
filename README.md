@@ -1,4 +1,3 @@
-````markdown
 # Hashime
 
 ## - A Go Library for Hash Detection
@@ -23,7 +22,6 @@ To install Hashime, use `go get`:
 ```sh
 go get github.com/0above/Hashime
 ```
-````
 
 ## Usage
 
