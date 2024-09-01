@@ -1,5 +1,7 @@
 # Hashime - A Go Library for Hash Detection
 
+![Static Badge](https://img.shields.io/badge/:badgeContent?style=social)
+
 ## Overview
 
 Hashime is a Go library designed for efficient hash detection and verification. It helps identify and verify different hash types, making it useful for building hash crackers, hashing your own code, and other hash-related tasks.
