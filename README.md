@@ -1,10 +1,11 @@
 # Hashime - A Go Library for Hash Detection
 
 ![Static Badge](https://img.shields.io/badge/:badgeContent?style=social)
-![Go Report Card](https://goreportcard.com/badge/github.com/username/your-library)
-![Build Status](https://img.shields.io/github/actions/workflow/status/username/your-library/ci.yml?branch=main)
-![GoDoc](https://godoc.org/github.com/username/your-library?status.svg)
-![License](https://img.shields.io/github/license/username/your-library)
+
+![Go Report Card](https://goreportcard.com/badge/github.com/0above/Hashime)
+![Build Status](https://img.shields.io/github/actions/workflow/status/0above/Hashime/ci.yml?branch=main)
+![GoDoc](https://pkg.go.dev/badge/github.com/0above/Hashime.svg)
+![License](https://img.shields.io/github/license/0above/Hashime)
 
 ## Overview
 
