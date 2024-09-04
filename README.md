@@ -1,31 +1,25 @@
-# Hashime - A Go Library for Hash Detection
+# ![Hashime Logo](link-to-your-logo.png) Hashime
 
-![Static Badge](https://img.shields.io/badge/:badgeContent?style=social)
+**Hashime** is your go-to library for detecting and working with various hash types in Go. Whether you’re building security tools or just need to identify a hash, Hashime makes it easy and efficient.
 
-![Go Report Card](https://goreportcard.com/badge/github.com/0above/Hashime)
-![Build Status](https://img.shields.io/github/actions/workflow/status/0above/Hashime/ci.yml?branch=main)
-![GoDoc](https://pkg.go.dev/badge/github.com/0above/Hashime.svg)
-![License](https://img.shields.io/github/license/0above/Hashime)
+[![Go Report Card](https://goreportcard.com/badge/github.com/0above/Hashime)](https://goreportcard.com/report/github.com/0above/Hashime)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GoDoc](https://godoc.org/github.com/0above/Hashime?status.svg)](https://godoc.org/github.com/0above/Hashime)
 
-## Overview
+## 🎯 What is Hashime?
 
-Hashime is a Go library designed for efficient hash detection and verification. It helps identify and verify different hash types, making it useful for building hash crackers, hashing your own code, and other hash-related tasks.
+Hashime is a lightweight Go library designed to help you detect and identify different types of cryptographic hashes. From MD5 to SHA-512, we’ve got you covered.
 
-**Note: Hashime is currently in an early development stage (undersaturation). The library is not yet feature-complete, and changes are expected.**
+## 🚀 Getting Started
 
-![Hashime Logo](addlink)
+Ready to dive in? Here’s how to get started with Hashime.
 
-## Features
+### Installation
 
-- **Support for Multiple Hash Algorithms**: SHA-256, MD5, SHA-1, and more.
-- **Efficient Hash Detection**: Designed for performance and ease of use.
+Getting Hashime up and running is a breeze. Simply add it to your project with:
 
-## Installation
-
-To install Hashime, use `go get`:
-
-```sh
-go get github.com/0above/Hashime
+```bash
+go get github.com/0above/Hashime/hashime
 ```
 
 ## Usage
@@ -80,9 +74,18 @@ func main() {
 }
 ```
 
+Run it from your terminal:
+
 ```sh
 go run main.go 5d41402abc4b2a76b9719d911017c592
 ```
+
+## ✨ Features
+
+- **Wide Hash Support**: Detects various hash types including MD5, SHA1, SHA256, SHA512, and more.
+- **Simple API**: Easy-to-use functions for detecting hash types.
+- **Extensible**: Easily add support for new hash types as needed.
+- **Lightweight**: Minimal dependencies, keeping your projects fast and efficient.
 
 ### Advanced Usage
 
