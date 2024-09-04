@@ -80,6 +80,10 @@ func main() {
 }
 ```
 
+```sh
+go run main.go 5d41402abc4b2a76b9719d911017c592
+```
+
 ### Advanced Usage
 
 For more advanced usage and configuration, refer to the [examples](https://github.com/0above/Hashime/tree/main/examples) directory of the repository.
