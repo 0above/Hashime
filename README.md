@@ -1,5 +1,7 @@
 # ![Hashime Logo](link-to-your-logo.png) Hashime
 
+**Note: Hashime is currently in an early development stage (underconstruction). The library is not yet feature-complete, and changes are expected.**
+
 **Hashime** is your go-to library for detecting and working with various hash types in Go. Whether you’re building security tools or just need to identify a hash, Hashime makes it easy and efficient.
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/0above/Hashime)](https://goreportcard.com/report/github.com/0above/Hashime)
