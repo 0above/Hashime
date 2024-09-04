@@ -28,6 +28,8 @@ Here’s a quick example of how to use Hashime for detecting hash types:
 
 ### Basic Example
 
+Want to identify a hash? It’s as easy as:
+
 ```go
 package main
 
