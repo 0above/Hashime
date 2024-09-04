@@ -39,19 +39,44 @@ package main
 
 import (
     "fmt"
-    "github.com/0above/Hashime"
+    "github.com/0above/Hashime/hashime"
 )
 
 func main() {
-    data := []byte("example data")
+    hash := "5d41402abc4b2a76b9719d911017c592" // Example MD5 hash
 
-    detector := hashime.New()
+    // Detect the hash type
+    hashType := hashime.DetectHashType(hash)
 
-    sha256Hash := detector.CalculateSHA256(data)
-    fmt.Printf("SHA-256: %x\n", sha256Hash)
+    // Convert the detected hash type to string and print it
+    fmt.Printf("Detected Hash Type: %s\n", hashime.HashTypeToString(hashType))
+}
+```
 
-    md5Hash := detector.CalculateMD5(data)
-    fmt.Printf("MD5: %x\n", md5Hash)
+### Terminal Example
+
+```go
+package main
+
+import (
+    "fmt"
+    "os"
+    "github.com/0above/Hashime/hashime"
+)
+
+func main() {
+    if len(os.Args) < 2 {
+        fmt.Println("Please provide a hash value.")
+        return
+    }
+
+    hash := os.Args[1]
+
+    // Detect the hash type
+    hashType := hashime.DetectHashType(hash)
+
+    // Convert the detected hash type to string and print it
+    fmt.Printf("Detected Hash Type: %s\n", hashime.HashTypeToString(hashType))
 }
 ```
 
