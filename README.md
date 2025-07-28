@@ -1,4 +1,4 @@
-<img align="right" width="159px" src="assets/gopher_sushi1.png" alt="Gopher Sushi">
+<img align="right" width="250px" src="assets/gopher_sushi1.png" alt="Gopher Sushi">
 
 # Hello, World!
 
