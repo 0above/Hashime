@@ -47,7 +47,7 @@ When I first built Hashime, I was learning Go and got the core detection working
 
 ## Installation & Usage
 
-* This section describes the current (old) build.
+This section describes the current (old) build.
 
 ### As a Go module
 
