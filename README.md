@@ -1,38 +1,59 @@
-# ![Hashime Logo](link-to-your-logo.png) Hashime
+![Hashime Logo](assets/gopher_sushi1.png)
 
-**Note: Hashime is currently in an early development stage (underconstruction). The library is not yet feature-complete, and changes are expected.**
+# Hello, World!
 
-**Hashime** is your go-to library for detecting and working with various hash types in Go. Whether you’re building security tools or just need to identify a hash, Hashime makes it easy and efficient.
+**Welcome to Hashime** — a pure-Go hash detection library crafted for Go developers.
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/0above/Hashime)](https://goreportcard.com/report/github.com/0above/Hashime)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GoDoc](https://godoc.org/github.com/0above/Hashime?status.svg)](https://godoc.org/github.com/0above/Hashime)
+Hashime takes any hash string, analyzes it with multiple detection techniques, and returns the most likely hash type along with a confidence score. It’s fast, lightweight, and has no external dependencies.
 
-## 🎯 What is Hashime?
+---
 
-Hashime is a lightweight Go library designed to help you detect and identify different types of cryptographic hashes. From MD5 to SHA-512, we’ve got you covered.
+## Project Status
 
-## 🚀 Getting Started
+When I first built Hashime, I was learning Go and got the core detection working. Life intervened, and development paused. Now, I’m back and committed to a full revamp. I’m rebuilding the codebase locally and will upload polished, complete updates rather than pushing every small commit. This way, you get stable, ready-to-use releases.
 
-Ready to dive in? Here’s how to get started with Hashime.
+---
 
-### Installation
+## The Revamp: What’s Changing
 
-Getting Hashime up and running is a breeze. Simply add it to your project with:
+* **Simplified architecture**: A cleaner, more maintainable code structure.
+* **Performance improvements**: Faster detection routines and reduced memory usage.
+* **Modular design**: Components you can reuse and extend in your own projects.
+
+---
+
+## Upcoming Features
+
+* **Salt detection**: Flag hashes that include a salt value.
+* **Broader hash coverage**: Support for Streebog, LM Hash, and other algorithms.
+* **Enhanced confidence scoring**: Smarter heuristics to improve accuracy.
+* **Improved CLI experience**: Cleaner terminal output, optional color highlights, and a simple banner.
+
+---
+
+## Features (Today)
+
+* **Library + CLI**: Import as a Go module or run a standalone command-line tool.
+* **Pure Go**: No third-party libraries—just add it to your `go.mod`.
+* **Multi-method detection**: Combines pattern checks, length analysis, and entropy measures for reliable results.
+
+---
+
+## Installation & Usage
+
+* **This section describes the current (old) build.
+
+### As a Go module
 
 ```bash
-go get github.com/0above/Hashime/hashime
+go get github.com/0above/Hashime
 ```
 
-## Usage
-
-Here’s a quick example of how to use Hashime for detecting hash types:
-
-### Basic Example
-
-Want to identify a hash? It’s as easy as:
+In your code:
 
 ```go
+usage 
+
 package main
 
 import (
@@ -48,65 +69,48 @@ func main() {
 
     // Convert the detected hash type to string and print it
     fmt.Printf("Detected Hash Type: %s\n", hashime.HashTypeToString(hashType))
-}
 ```
 
-### Terminal Example
+### From the terminal
 
-```go
-package main
-
-import (
-    "fmt"
-    "os"
-    "github.com/0above/Hashime/hashime"
-)
-
-func main() {
-    if len(os.Args) < 2 {
-        fmt.Println("Please provide a hash value.")
-        return
-    }
-
-    hash := os.Args[1]
-
-    // Detect the hash type
-    hashType := hashime.DetectHashType(hash)
-
-    // Convert the detected hash type to string and print it
-    fmt.Printf("Detected Hash Type: %s\n", hashime.HashTypeToString(hashType))
-}
-```
-
-Run it from your terminal:
-
-```sh
+```bash
 go run main.go 5d41402abc4b2a76b9719d911017c592
 ```
 
-## ✨ Features
+Output example:
 
-- **Wide Hash Support**: Detects various hash types including MD5, SHA1, SHA256, SHA512, and more.
-- **Simple API**: Easy-to-use functions for detecting hash types.
-- **Extensible**: Easily add support for new hash types as needed.
-- **Lightweight**: Minimal dependencies, keeping your projects fast and efficient.
+```
+Detected: MD5
+```
 
-### Advanced Usage
+---
 
-For more advanced usage and configuration, refer to the [examples](https://github.com/0above/Hashime/tree/main/examples) directory of the repository.
+## Roadmap & Contributions
 
-## Examples
+* Stable core: Reliable detection for MD5, SHA-1, SHA-256, and more.
+* Active development: Complete rewrite in progress with exciting new features.
 
-You can find more examples in the [examples directory](https://github.com/0above/Hashime/tree/main/examples) of the repository.
+**Expected Releases:**
 
-## Contributing
+* **October 2025**: First usable revamp version with core new features integrated.
+* **December 2025**: Fully revamped release with all planned enhancements completed.
 
-Contributions are welcome! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute to the project.
+Because I’m uploading finished updates only, GitHub will show stable snapshots of each revamp stage. To contribute:
 
-## License
+1. Fork the repository
+2. Create a feature branch
+3. Submit a pull request or open an issue
 
-Hashime is released under the MIT License. See [LICENSE](LICENSE) for more details.
+License: [MIT](LICENSE)
 
-## Contact
+---
 
-For questions or feedback, please open an issue on the [GitHub repository](https://github.com/0above/Hashime) or contact [email@example.com](mailto:email@example.com).
+## Feedback & Ideas
+
+I’d love to hear from you:
+
+* Which hash algorithms matter most to you?
+* What CLI features would make Hashime indispensable?
+* Any sample hashes or test cases we should include?
+
+Thanks for checking out Hashime—let’s build something great together! 🎉
