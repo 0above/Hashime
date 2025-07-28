@@ -1,6 +1,10 @@
-<div style="float: right; margin-left: 20px; margin-bottom: 20px;">
-  <img width="280" src="assets/gopher_sushi1.png" alt="Gopher Sushi">
-</div>
+<p align="center">
+  <img 
+    src="assets/gopher_sushi1.png" 
+    alt="Gopher Sushi" 
+    style="max-width: 80%; min-width: 300px;"
+  >
+</p>
 
 # Hello, World!
 
@@ -43,7 +47,7 @@ When I first built Hashime, I was learning Go and got the core detection working
 
 ## Installation & Usage
 
-* **This section describes the current (old) build.
+* This section describes the current (old) build.
 
 ### As a Go module
 
