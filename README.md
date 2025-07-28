@@ -1,4 +1,6 @@
-<img align="right" width="250px" src="assets/gopher_sushi1.png" alt="Gopher Sushi">
+<div style="float: right; margin-left: 20px; margin-bottom: 20px;">
+  <img width="280" src="assets/gopher_sushi1.png" alt="Gopher Sushi">
+</div>
 
 # Hello, World!
 
