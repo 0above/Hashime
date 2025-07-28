@@ -1,4 +1,4 @@
-![Hashime Logo](assets/gopher_sushi1.png)
+![Gopher Sushi](assets/gopher_sushi1.png)
 
 # Hello, World!
 
